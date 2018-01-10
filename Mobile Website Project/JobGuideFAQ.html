@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+	<title>HNet Mobile Job Website</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	
+</head>
+
+<body onload="SignInOut()" style="background-color: #194c5d; color: white">
+	<header class="top-box">
+		<ul>
+			<div id="mySidenav" class="sidenav">
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+				<a href="HNet.html">Job Guide Home</a>
+				<a href="BrowseJobPostings.html">View Open Jobs</a>
+				<a href="AdvancedSearch.html">Advanced Search</a>
+				<a href="AboutJobGuide.html">About Job Guide</a>
+				<a href="JobGuideFAQ.html">Job Guide FAQ</a>
+			</div>
+		
+			<span style="color:white; padding-left:10px" onclick="openNav()"><img src="images/menu-icon.png" alt="menu" height="19" width="19" /></span>
+
+			<li><div id="RegisterSignOut"></div></li>
+			
+			<li><div id="LoginProfile"></div></li>
+		</ul>
+	</header>
+	
+	<header class="bot-box">
+		<div style="font-size: 0.75em; font-weight: 600">
+			<img src="images/hnet-icon.png" />
+			<a style="color: white" href="https://networks.h-net.org/">Humanities and Social Sciences Online</a>
+		</div>
+	</header>
+	
+	<h4 class="text-center">Frequently Asked Questions</h4>
+	
+	<p>
+		<b>Q:</b> What is the H-Net Job Guide?<br>
+		<b>A:</b> The Job Guide posts academic position announcements in the Humanities and Social Sciences serving a broad audience of administrators, faculty members, archivists, librarians, and other professionals in the humanities and social sciences. The Job Guide is fully sortable and searchable, and is available via email and the web at no cost to the job seeker. For further information see the About Job Guide page.
+	</p>
+	<p>
+		<b>Q:</b> What is the fee for posting a job post?<br>
+		<b>A:</b> We charge a base rate of $225 (US dollars) per post. If you would like to include a logo there is an additional $40 (US dollars) charge. If you would like to feature your post on the Job Guide there is an additional $90 charge. Featured job postings will also be shared with subscribers on our social media outlets (Twitter and Facebook).
+	</p>
+	<p>
+		<b>Q:</b> What types of payment do you accept?<br>
+		<b>A:</b> H-Net accepts credit cards and checks. Wire transfers are accepted, but an additional fee is assessed. H-Net recommends paying by credit card or check.<br>
+		<img src="images/cclogos.png" style="width:280px; height:60px">
+	</p>
+	<p>
+		<b>Q:</b> Will my job be posted on the network(s) that cover its field?<br>
+		<b>A:</b> Not automatically. All new posts from the previous week are sent to the editors of our networks as a digest on Monday mornings. Editors select job posts from that digest to include on their respective networks. Editors, not the Job Guide staff, decide what to publish on their networks. Once a job post has been published on the Job Guide, you are free to write to network editors to request posting there.
+	</p>
+	<p>
+		<b>Q:</b> Why was my credit card declined?<br>
+		<b>A:</b> We may not be able to tell you. To protect cardholder privacy, card issuers do not provide vendors with complete information about why a card was declined. Generally, you will have to contact your card company to get specific information about a declined transaction.
+	</p>
+	<p>
+		<b>Q:</b> Is it possible to waive the fee?<br>
+		<b>A:</b> In very limited cases, yes. For more information on our fee waiver policy see the Job Posting Policy page.
+	</p>
+	<p>
+		<b>Q:</b> What is the submission deadline for a job post to be published?<br>
+		<b>A:</b> As the H-Net Job Guide is an online publication there is no submission deadline. Once submitted your job post should appear online within 72 business hours. You may also set a posting date for the post if you would like us to hold the post until a specific day.
+	</p>
+	<p>
+		<b>Q:</b> Is there a word limit?<br>
+		<b>A:</b> No, there is no word limit.
+	</p>
+	<p>
+		<b>Q:</b> How long will my job post appear online?<br>
+		<b>A:</b> The job post will remain online until the closing date you specify. However, a job post will not remain online longer than a year.
+	</p>
+	<p>
+		<b>Q:</b> How do I submit a job?<br>
+		<b>A:</b> You will need an H-Net profile to submit a job post. If you do not have a profile you can create one here. (Note that this profile is different from your H-Net Commons account.) Once you have have completed the registration process, login to Jobs Management and select New Job from the menu.
+	</p>
+	<p>
+		<b>Q:</b> Why do I need a login?<br>
+		<b>A:</b> By using a login process we are able to allow users access to the job posts that they have submitted, to make changes.
+	</p>
+	<p>
+		<b>Q:</b> How can I make changes to the text of my job post?<br>
+		<b>A:</b> First login to the Jobs Management page, click on 'My Jobs', select the job in question, and click on 'Edit Job'. After making any desired changes, simply click on 'Update Job'.
+	</p>
+	<p>
+		<b>Q:</b> I made changes to the job description, post text, contact information, website, or logo of my job post, but they do are not appearing online, why is this?<br>
+		<b>A:</b> Changes to these fields need to be approved by H-Net staff before they will appear online. This should happen within one business day. In the meantime, your job post will remain available with the previous versions of these fields. Changes to any other fields besides the job description, post text, contact information, website, and logo will update immediately.
+	</p>
+	<p>
+		<b>Q:</b> Can I add features to my job post after I have submitted it?<br>
+		<b>A:</b> Yes, however your post will be temporarily suspended until you process a payment for the amount of the feature(s).
+	</p>
+	<p>
+		<b>Q:</b> How do I add a logo to my job post?<br>
+		<b>A:</b> Login to Jobs Management, click on 'My Jobs', select the job in question, click on 'Update Job'. Change the Logo field to 'Yes', and click 'Update Job'. You will be directed to a page to upload your logo. The file must be a valid JPEG, GIF, or PNG image. You will then be directed to make a payment for the logo.
+	</p>
+	<p>
+		<b>Q:</b> How do I make my job a featured post?<br>
+		<b>A:</b> Login to Jobs Management, click on 'My Jobs', select the job in question, click on 'Update Job'. Change the Featured field to 'Yes', and click 'Update Job'. You will then be directed to make a payment for the feature.
+	</p>
+	<p>
+		<b>Q:</b> How do I get the advertising agency discount for my job postings?<br>
+		<b>A:</b> After you have created an H-Net profile, please contact H-Net staff at jobguide@mail.h-net.msu.edu with evidence of membership in the Standard Directory of Advertising Agencies, or another acceptable organization. Once your account has been flagged by H-Net staff as an advertising agency account, you will be granted a 15% discount on all new job posts, including any additional features.
+	</p>
+	<p>
+		<b>Q:</b> Can I change the payment method for my job post?<br>
+		<b>A:</b> Yes, simply login to Jobs Management, click on 'My Jobs', select the job in question, click the 'cancel' link under Transaction History, and click 'Cancel Payment'. Then click 'new transaction' and process another payment.
+	</p>
+	<p>
+		<b>Q:</b> How can I get a copy of my invoice?<br>
+		<b>A:</b> Simply login to Jobs Management , click on 'My Jobs', select the job in question, and click the 'view invoice' link under Other Information.
+	</p>
+	<p>
+		<b>Q:</b> How can I remove my job post once the position has been filled?<br>
+		<b>A:</b> Login to Jobs Management, click on 'My Jobs', select the job in question, click on 'Update Job'. Change the closing date to today's date, and click 'Update Job'.
+	</p>
+	<p>
+		<b>Q:</b> How can I access a job post for my university that someone else posted?<br>
+		<b>A:</b> Please contact H-Net staff at jobguide@mail.h-net.msu.edu, and they can associate your account with the job post in question.
+	</p>
+	
+	<script src="js/jquery-3.2.1.min.js" async defer></script>
+	<script src="js/popper.min.js" async defer></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous" async defer></script>
+	<script src="js/java.js"></script>
+	
+</body>
+
+</html>

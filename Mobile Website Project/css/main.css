@@ -1,0 +1,297 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-size: 100%;
+	color: white;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	background-color: #194c5d;
+}
+
+img{
+	max-width: 100%;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+li {
+	float: right;
+}
+
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+}
+
+p {
+	padding-left: 20px;
+	padding-right: 10px;
+	font-size: 0.8em;
+}
+
+table {
+	width: 100%;
+}
+
+option {
+	font-size: 0.8em;
+}
+
+select {
+	width: 95%;
+}
+
+th, td {
+	padding-left: 20px;
+}
+
+h4 {
+	padding-top: 5px;
+}
+
+/* Top Box */
+.top-box{
+	position: fixed;
+	z-index: 2;
+	top: 0;
+	left: 0;
+	height: 27px;
+	width: 100%;
+	background: #3299ba;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+/* Bottom Box */
+.bot-box{
+	z-index: 3;
+	padding-top: 32px;
+	padding-left: 8px;
+	left: 0px;
+	height: 72px;
+	width: 100%;
+	background: #3299ba;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.description-box{
+	background-color: #dde4e7;
+	margin-right: 15px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.hnet-style{
+	color: white;
+	text-shadow: 1px 1px black;
+}
+
+/* Profile Sidebar */
+.profile-sidebar{
+	font-size: 0.85em;
+	font-weight: 500;
+	background-color: #3299ba;
+	margin-top: 7px;
+	width: 90px;
+}
+
+/* Register Link */
+.register-link{
+	padding-top: 2px;
+	padding-left: 8px;
+	padding-right: 8px;
+	display: block;
+	float: right;
+	text-align: right;
+	font-size: 0.85em;
+	color: white;
+	text-shadow: 1px 1px black;
+}
+
+/* Login Link */
+.login-link{
+	padding-top:2px;
+	padding-right: 8px;
+	border-right-color: white;
+	border-right-width: 1px;
+	border-right-style: solid;
+	display: block;
+	float: right;
+	text-align: right;
+	font-size: 0.85em;
+	color: white;
+	text-shadow: 1px 1px black;
+}
+
+.login-box{
+	border-radius: 5%;
+	background-color: #dde4e7;
+	margin: auto;
+	width: 250px;
+	padding-top: 20px;
+	padding-bottom: 50px;
+}
+
+.profile-box{
+	background-color: #dde4e7;
+	margin: auto;
+	width: 90%;
+	height: 90%;
+	margin-top: 15px;
+	margin-bottom: 20px;
+}
+
+.edit-email-box{
+	background-color: #dde4e7;
+	margin: auto;
+	width: 90%;
+	height: 90%;
+	padding-bottom: 30px;
+	margin-top: 15px;
+	margin-bottom: 20px;
+}
+
+.edit-institution-box{
+	background-color: #dde4e7;
+	margin: auto;
+	width: 90%;
+	height: 90%;
+	padding-bottom: 30px;
+	margin-top: 15px;
+	margin-bottom: 5px;
+}
+
+.edit-fields-box{
+	background-color: #dde4e7;
+	margin: auto;
+	width: 90%;
+	height: 90%;
+	padding-bottom: 30px;
+	margin-top: 15px;
+	margin-bottom: 5px;
+}
+
+.edit-fields-box2{
+	background-color: #FFFFFF;
+	border-style: solid;
+	border-width: 1px;
+	margin: auto;
+	width: 90%;
+	height: 90%;
+	padding-bottom: 30px;
+	margin-top: 15px;
+	margin-bottom: 5px;
+}
+
+.edit-button{
+	box-shadow: 1px 1px 2px #888888;
+	font-size: 0.8em;
+	float: right;
+	margin-top: 3px;
+	margin-right: 6px;
+	border: none;
+	width: 50px;
+	background-color: #194c5d;
+	color: white;
+}
+
+.save-button{
+	box-shadow: 1px 1px 2px #888888;
+	font-size: 0.8em;
+	border: none;
+	width: 50px;
+	background-color: #194c5d;
+	color: white;
+}
+
+.link-wrap{
+	white-space: pre-wrap; /* css-3 */    
+    white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+    white-space: -pre-wrap; /* Opera 4-6 */    
+    white-space: -o-pre-wrap; /* Opera 7 */    
+    word-wrap: break-word; /* Internet Explorer 5.5+ */
+}
+
+input[type="text"] {
+	display: block;
+	margin: 0 auto;
+	width: 80%;
+}
+
+input[type="password"] {
+	display: block;
+	margin: 0 auto;
+	width: 80%;
+}
+
+.border-bottom{
+	border-bottom-color: black;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+.nav-border-active{
+	border-style: solid;
+	border-width: 1px 5px 1px 0px;
+	border-color: #f78522;
+}
+
+.nav-border-passive{
+	border-style: solid;
+	border-width: 1px 3px 1px 0px;
+	border-color: #adbfdb;
+}
+
+/* Side Navigation Menu */
+.sidenav{
+	height: 100%; /* 100% Full-height */
+	width: 0; /* 0 width - change this with Javascript */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Stay on top */
+	top: 0;
+	left: 0;
+	background-color: #111; /* Black */
+	overflow-x: hidden; /* Disable horizontal scroll */
+	padding-top: 60px; /* Place content 60px from the top */
+	transition: 0.5s; /* 0.5 second transition effect to slide in teh sidenav */
+	opacity: 0.95;
+}
+
+/* Navigation Menu Links */
+.sidenav a{
+	padding: 8px 8px 8px 26px;
+	text-decoration: none;
+	font-size: 13px;
+	color: #818181;
+	display: block;
+	transition: 0.3s;
+}
+
+/* Change color when mouse over navigation links */
+.sidenav a:hover, .offcanvas a:focus{
+	color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn{
+	position: absolute;
+	top: 0;
+	right: 15px;
+	font-size: 32px;
+	margin-left: 60px;
+}
+
+/* On smaller screens, where height is less than 450px, change
+the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+	.sidenav {padding-top: 15px;}
+	.sidenav a {font-size: 18px;}
+}

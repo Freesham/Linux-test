@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>HNet Mobile Job Website</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+</head>
+
+<body onload="Redirect(); DetailedDescription()" style="background-color: #194c5d; color: white">
+
+	<div id="fb-root"></div>
+	  <script>(function(d, s, id) {
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) return;
+		js = d.createElement(s); js.id = id;
+		js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1";
+		fjs.parentNode.insertBefore(js, fjs);
+	  }(document, 'script', 'facebook-jssdk'));</script>
+
+	<header class="top-box">
+		<ul>
+			<div id="mySidenav" class="sidenav">
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+				<a href="HNet.html">Job Guide Home</a>
+				<a href="BrowseJobPostings.html">View Open Jobs</a>
+				<a href="AdvancedSearch.html">Advanced Search</a>
+				<a href="AboutJobGuide.html">About Job Guide</a>
+				<a href="JobGuideFAQ.html">Job Guide FAQ</a>
+			</div>
+		
+			<span style="color:white; padding-left:10px" onclick="openNav()"><img src="images/menu-icon.png" alt="menu" height="19" width="19" /></span>
+
+			<li><div id="RegisterSignOut"></div></li>
+			
+			<li><div id="LoginProfile"></div></li>
+		</ul>
+	</header>
+
+	<header class="bot-box">
+		<div style="font-size: 0.75em; font-weight: 600">
+			<img src="images/hnet-icon.png" />
+			<a class="hnet-style" href="https://networks.h-net.org/">Humanities & Social Sciences Online</a>
+		</div>
+	</header>
+
+	<br>
+	<div id="description" style="margin-left: 15px;"></div>
+	<div style="line-height:50%;">
+		<br>
+	</div>
+	<div style="width: 220px; margin: 0 auto;">
+		<div style="display: none" id="jobid"></div>
+		<table>
+			<tr>
+				<td><input style="width: 70px; height:39px; font-size: 0.8em" name="submit" type="button" onClick="saveJob()" value="Save"/></td>
+				<td><div id ="share"></div></td>
+			</tr>
+		</table>
+	</div>
+	
+	<div style="margin-left: 15px; margin-top: 15px;">
+		<div class="description-box" style="color: black; font-size: 0.9em;">
+			<div class="link-wrap" id="website" style="margin-left: 15px;"></div>
+			<div id="institutionname" style="margin-left: 15px;"></div>
+			<div id="institutiontype" style="margin-left: 15px;"></div>
+			<div id="department" style="margin-left: 15px;"></div>
+			<div id="location" style="margin-left: 15px;"></div>
+			<div id="date_posting" style="margin-left: 15px;"></div>
+			<div id="date_closing" style="margin-left: 15px;"></div>
+		</div>
+		<br>
+		<div class="description-box" style="color: black; margin-bottom: 30px;">
+			<div id="text" style="margin-right: 15px;"></div>
+		</div>
+		<div class="description-box" style="color: black; margin-bottom: 30px;">
+			<div class="link-wrap" id="contact" style="margin-left: 15px;"></div>
+		</div>
+	</div>
+	
+	<script src="js/jquery-3.2.1.min.js" async defer></script>
+	<script src="js/popper.min.js" async defer></script>
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.5.1/bluebird.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.3/fetch.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous" async defer></script>
+	<script src="js/java.js"></script>
+	
+</body>
+
+</html>

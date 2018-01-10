@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+	<title>HNet Mobile Job Website</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	
+</head>
+
+<body onload="Redirect(); GeneralSearch();" style="background-color: #194c5d; color: white">
+	<header class="top-box">
+		<ul>
+			<div id="mySidenav" class="sidenav">
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+				<a href="HNet.html">Job Guide Home</a>
+				<a href="BrowseJobPostings.html">View Open Jobs</a>
+				<a href="AdvancedSearch.html">Advanced Search</a>
+				<a href="AboutJobGuide.html">About Job Guide</a>
+				<a href="JobGuideFAQ.html">Job Guide FAQ</a>
+			</div>
+		
+			<span style="color:white; padding-left:10px" onclick="openNav()"><img src="images/menu-icon.png" alt="menu" height="19" width="19" /></span>
+
+			<li><div id="RegisterSignOut"></div></li>
+			
+			<li><div id="LoginProfile"></div></li>
+		</ul>
+	</header>
+	
+	<header class="bot-box">
+		<div style="font-size: 0.75em; font-weight: 600">
+			<img src="images/hnet-icon.png" />
+			<a class="hnet-style" href="https://networks.h-net.org/">Humanities and Social Sciences Online</a>
+		</div>
+	</header>
+	
+	<h4 class="text-center">Browse Job Postings</h4>
+	
+	<div id="job">
+		<div class="profile-box">
+			<div id="results">					
+				<!--java.js prints job listing links here-->
+			</div>
+		</div><br>
+	</div>
+	
+	<script src="js/jquery-3.2.1.min.js" async defer></script>
+	<script src="js/popper.min.js" async defer></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous" async defer></script>
+	<script src="js/java.js"></script>
+	
+</body>
+
+</html>
